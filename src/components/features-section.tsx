@@ -99,7 +99,7 @@ const FeaturesSection: React.FC = () => {
 					</p>
 				</div>
 				<div className='mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4'>
-					{features.map((feature, index) => (
+					{features.map((feature) => (
 						<div
 							key={feature.title}
 							className='bg-white rounded-lg shadow-md overflow-hidden'>
