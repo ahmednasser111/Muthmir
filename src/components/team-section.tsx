@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const teamMembers = [
 	{
-		name: "Ahmed Samir Abdelfattah",
+		name: "Ahmed Samir",
 		role: "AI Engineer",
-		image: "/placeholder.svg?height=400&width=400",
+		image: "/pictures/samir.jpg?height=400&width=400",
 		category: "AI",
 	},
 	{
@@ -22,7 +22,7 @@ const teamMembers = [
 	{
 		name: "Marwan Ashraf",
 		role: "Software Engineer",
-		image: "/placeholder.svg?height=400&width=400",
+		image: "/pictures/marwan.jpg?height=400&width=400",
 		category: "Mobile",
 	},
 	{
@@ -32,7 +32,7 @@ const teamMembers = [
 		category: "Data Analysis",
 	},
 	{
-		name: "Ahmed Samir Abdelazim",
+		name: "Ahmed Samir",
 		role: "Data Analyst",
 		image: "/pictures/abdelazim.jpg?height=400&width=400",
 		category: "Data Analysis",
@@ -44,7 +44,7 @@ const teamMembers = [
 		category: "AI",
 	},
 	{
-		name: "Nour Anwar",
+		name: "Nour-Eldin Anwar",
 		role: "AI Engineer",
 		image: "/pictures/nour.jpg?height=400&width=400",
 		category: "AI",
@@ -52,7 +52,7 @@ const teamMembers = [
 	{
 		name: "Khalid Abdelhamid",
 		role: "Data Analyst",
-		image: "/placeholder.svg?height=400&width=400",
+		image: "/pictures/khalid.jpg?height=400&width=400",
 		category: "Data Analysis",
 	},
 ];
