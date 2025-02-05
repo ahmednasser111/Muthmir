@@ -55,9 +55,17 @@ const teamMembers = [
 		image: "/pictures/khalid.jpg?height=400&width=400",
 		category: "Data Analysis",
 	},
+	{
+		name: "Ahmed Salah",
+		role: "Software Engineer",
+		image: "/pictures/place.jpg?height=400&width=400",
+		category: "Mobile",
+	},
 ];
 
 export function TeamSection() {
+	teamMembers.sort(() => Math.random() - 0.5);
+
 	return (
 		<section
 			id='team'
@@ -76,10 +84,10 @@ export function TeamSection() {
 						Meet the talented individuals behind the Muthmir project
 					</p>
 				</motion.div>
-				<div className='mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4'>
+				<div className='mt-12 grid gap-3 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5'>
 					{teamMembers.map((member, index) => (
 						<motion.div
-							key={member.name}
+							key={index}
 							initial={{ opacity: 0, y: 20 }}
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -91,7 +99,7 @@ export function TeamSection() {
 										alt={member.name}
 										width={400}
 										height={400}
-										className='w-full aspect-square object-cover'
+										className='w-full aspect-square object-center'
 									/>
 								</div>
 								<div className='p-6'>

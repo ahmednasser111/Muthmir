@@ -3,6 +3,11 @@ import { useState } from "react";
 
 const navItems = [
 	{ href: "#home", label: "Home" },
+	{ href: "#muthmir", label: "Muthmir" },
+	{ href: "#prototype", label: "Prototype" },
+	{ href: "#iot", label: "IoT" },
+	{ href: "#ai", label: "AI" },
+	{ href: "#analysis", label: "Analysis" },
 	{ href: "#about", label: "About" },
 	{ href: "#features", label: "Features" },
 	{ href: "#team", label: "Team" },
@@ -22,7 +27,9 @@ export const Header: React.FC = () => {
 							alt='Muthmir Logo'
 							className='w-8 h-8 sm:w-10 sm:h-10'
 						/>
-						<span className='text-lg sm:text-xl font-bold'>Muthmir</span>
+						<span className='text-lg sm:text-xl font-bold text-green-500'>
+							Muthmir
+						</span>
 					</div>
 
 					{/* Desktop Navigation */}
