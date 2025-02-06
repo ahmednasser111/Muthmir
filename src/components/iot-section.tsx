@@ -119,7 +119,7 @@ const IoTSection: React.FC = () => {
 				</div>
 
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16'>
-					<div className='relative aspect-video rounded-2xl overflow-hidden'>
+					<div className='relative aspect-video rounded-2xl overflow-hidden margin-auto'>
 						<img
 							src='iot.png'
 							alt='Muthmir IoT sensor in the field'

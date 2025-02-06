@@ -17,8 +17,8 @@ const HeroSection: React.FC = () => {
 			</div>
 
 			{/* Content */}
-			<div className='relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
-				<div className='flex min-h-screen items-center'>
+			<div className='relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 '>
+				<div className='flex min-h-screen items-center '>
 					<div className='w-full py-20 md:py-32 lg:w-3/5'>
 						<h1 className='text-4xl font-extrabold tracking-tight text-[#73C991] sm:text-5xl md:text-6xl lg:text-7xl'>
 							Make Your Farm <span className='text-white'>Smarter</span>
@@ -29,7 +29,7 @@ const HeroSection: React.FC = () => {
 						</p>
 						<div className='mt-10 flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0'>
 							<a
-								href='/get-started'
+								href='#muthmir'
 								className='group inline-flex items-center justify-center rounded-full bg-[#28A745] px-6 py-3 text-lg font-semibold text-white transition-all duration-200 hover:bg-[#73C991] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#28A745] focus:ring-offset-2 focus:ring-offset-gray-900'
 								aria-label='Get Started with Muthmir'>
 								Get Started
@@ -45,12 +45,6 @@ const HeroSection: React.FC = () => {
 										d='M14 5l7 7m0 0l-7 7m7-7H3'
 									/>
 								</svg>
-							</a>
-							<a
-								href='/learn-more'
-								className='inline-flex items-center justify-center rounded-full border-2 border-[#73C991] bg-transparent px-6 py-3 text-lg font-semibold text-[#73C991] transition-all duration-200 hover:bg-[#73C991]/10 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#73C991] focus:ring-offset-2 focus:ring-offset-gray-900'
-								aria-label='Learn More about Muthmir'>
-								Learn More
 							</a>
 						</div>
 					</div>

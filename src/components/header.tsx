@@ -1,5 +1,6 @@
-import type React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 const navItems = [
 	{ href: "#home", label: "Home" },
@@ -8,81 +9,75 @@ const navItems = [
 	{ href: "#iot", label: "IoT" },
 	{ href: "#ai", label: "AI" },
 	{ href: "#analysis", label: "Analysis" },
-	{ href: "#about", label: "About" },
-	{ href: "#features", label: "Features" },
+	{ href: "#mobile", label: "Mobile" },
+	{ href: "#achievement", label: "Achievement" },
 	{ href: "#team", label: "Team" },
 ];
 
-export const Header: React.FC = () => {
+export const Header = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrolled(window.scrollY > 20);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
 
 	return (
-		<header className='sticky top-0 z-50 w-full border-b bg-white bg-opacity-95 backdrop-blur'>
+		<motion.header
+			initial={{ y: -100 }}
+			animate={{ y: 0 }}
+			transition={{ type: "spring", stiffness: 300, damping: 30 }}
+			className={`sticky top-0 z-50 w-full bg-gradient-to-r from-green-50 to-teal-50 transition-all duration-300 ${
+				scrolled ? "shadow-lg" : ""
+			}`}>
 			<div className='container mx-auto px-4'>
-				<div className='flex h-16 items-center justify-between'>
+				<div className='flex h-20 items-center justify-between'>
 					{/* Logo */}
 					<div className='flex items-center space-x-2'>
 						<img
 							src='/logo.png'
 							alt='Muthmir Logo'
-							className='w-8 h-8 sm:w-10 sm:h-10'
+							className='w-10 h-10 sm:w-12 sm:h-12 rounded-full shadow-md'
 						/>
-						<span className='text-lg sm:text-xl font-bold text-green-500'>
+						<span className='text-xl sm:text-2xl font-bold bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent'>
 							Muthmir
 						</span>
 					</div>
 
 					{/* Desktop Navigation */}
-					<nav className='hidden md:flex space-x-4'>
+					<nav className='hidden lg:flex space-x-1'>
 						{navItems.map((item) => (
 							<a
 								key={item.href}
 								href={item.href}
-								className='text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium'>
+								className='text-gray-700 hover:text-green-600 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 relative group hover:bg-white hover:shadow-md'>
 								{item.label}
+								<span className='absolute bottom-0 left-1/2 w-0 h-0.5 bg-green-500 group-hover:w-1/2 group-hover:left-1/4 transition-all duration-200' />
 							</a>
 						))}
 					</nav>
 
-					{/* CTA Button and Mobile Menu Toggle */}
-					<div className='flex items-center'>
-						<button className='hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'>
-							Get Started
-						</button>
+					{/* Mobile Menu Toggle */}
+					<div className='flex items-center lg:hidden'>
 						<button
-							className='md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'
+							className='inline-flex items-center justify-center p-2 rounded-full text-gray-600 hover:text-green-600 hover:bg-white focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-200'
 							onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
 							<span className='sr-only'>Open main menu</span>
 							{isMobileMenuOpen ? (
-								<svg
+								<X
 									className='block h-6 w-6'
-									xmlns='http://www.w3.org/2000/svg'
-									fill='none'
-									viewBox='0 0 24 24'
-									stroke='currentColor'
-									aria-hidden='true'>
-									<path
-										strokeLinecap='round'
-										strokeLinejoin='round'
-										strokeWidth={2}
-										d='M6 18L18 6M6 6l12 12'
-									/>
-								</svg>
+									aria-hidden='true'
+								/>
 							) : (
-								<svg
+								<Menu
 									className='block h-6 w-6'
-									xmlns='http://www.w3.org/2000/svg'
-									fill='none'
-									viewBox='0 0 24 24'
-									stroke='currentColor'
-									aria-hidden='true'>
-									<path
-										strokeLinecap='round'
-										strokeLinejoin='round'
-										strokeWidth={2}
-										d='M4 6h16M4 12h16M4 18h16'
-									/>
-								</svg>
+									aria-hidden='true'
+								/>
 							)}
 						</button>
 					</div>
@@ -90,27 +85,27 @@ export const Header: React.FC = () => {
 
 				{/* Mobile Menu */}
 				{isMobileMenuOpen && (
-					<div className='md:hidden'>
-						<div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
+					<motion.div
+						initial={{ opacity: 0, height: 0 }}
+						animate={{ opacity: 1, height: "auto" }}
+						exit={{ opacity: 0, height: 0 }}
+						transition={{ duration: 0.3, ease: "easeInOut" }}
+						className='md:hidden overflow-hidden bg-white rounded-b-2xl shadow-lg'>
+						<div className='px-2 pt-2 pb-3 space-y-1'>
 							{navItems.map((item) => (
 								<a
 									key={item.href}
 									href={item.href}
-									className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
+									className='block px-4 py-2 rounded-full text-base font-medium text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all duration-200'
 									onClick={() => setIsMobileMenuOpen(false)}>
 									{item.label}
 								</a>
 							))}
-							<button
-								className='w-full text-left block px-3 py-2 rounded-md text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700'
-								onClick={() => setIsMobileMenuOpen(false)}>
-								Get Started
-							</button>
 						</div>
-					</div>
+					</motion.div>
 				)}
 			</div>
-		</header>
+		</motion.header>
 	);
 };
 

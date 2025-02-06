@@ -117,17 +117,11 @@ const AnalysisSection: React.FC = () => {
 
 					<div className='order-1 lg:order-2'>
 						<div className='relative mx-auto max-w-[300px]'>
-							{/* Phone Frame */}
-							<div className='relative rounded-[3rem] overflow-hidden bg-gray-900 p-3 shadow-2xl'>
-								<div className='absolute top-0 inset-x-0 h-6 bg-gray-900 rounded-t-[3rem] flex items-center justify-center'>
-									<div className='w-20 h-4 bg-black rounded-full'></div>
-								</div>
-								<img
-									src='analysis.png'
-									alt='Muthmir mobile app analysis dashboard'
-									className='rounded-[2.5rem] w-full'
-								/>
-							</div>
+							<img
+								src='analysis.png'
+								alt='Muthmir mobile app analysis dashboard'
+								className='rounded-[2.5rem] w-full'
+							/>
 						</div>
 					</div>
 				</div>
