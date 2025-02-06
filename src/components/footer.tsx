@@ -1,4 +1,4 @@
-import { Github, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
 const quickLinks = ["Home", "Muthmir", "Prototype", "Team"];
 const socialLinks = [
