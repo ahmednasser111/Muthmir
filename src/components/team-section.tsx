@@ -16,7 +16,7 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
 	{
 		name: "Ahmed Samir",
-		role: "AI Engineer",
+		role: "Team Leader",
 		image: "/pictures/samir.jpg",
 		categories: ["AI", "Data Analysis"],
 		socialLinks: {
@@ -37,7 +37,7 @@ const teamMembers: TeamMember[] = [
 	{
 		name: "Hazem Mohamed",
 		role: "Software Engineer",
-		image: "/placeholder.svg",
+		image: "/placeholder.jpg",
 		categories: ["Mobile", "Backend", "IoT", "Cloud"],
 		socialLinks: {
 			linkedin: "https://www.linkedin.com/in/hazem-mohamed-b296a6267/",
@@ -77,7 +77,7 @@ const teamMembers: TeamMember[] = [
 	{
 		name: "Ali Mahmoud",
 		role: "AI Engineer",
-		image: "/placeholder.svg",
+		image: "/placeholder.jpg",
 		categories: ["AI", "IoT", "Data Analysis"],
 		socialLinks: {
 			linkedin: "https://www.linkedin.com/in/ali-mahmoud-07b7ba24b",
@@ -107,7 +107,7 @@ const teamMembers: TeamMember[] = [
 	{
 		name: "Ahmed Salah",
 		role: "Software Engineer",
-		image: "/pictures/place.jpg",
+		image: "placeholder.jpg",
 		categories: ["Mobile", "IoT", "Cloud"],
 		socialLinks: {
 			linkedin: "https://www.linkedin.com/in/ahmed-salah-a6541b285",
@@ -181,7 +181,7 @@ export function TeamSection() {
 				</div>
 
 				{/* Team Grid */}
-				<div className='grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+				<div className='grid gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5'>
 					{filteredMembers.map((member, index) => (
 						<div
 							key={`${member.name}-${index}`}
@@ -217,7 +217,7 @@ export function TeamSection() {
 										{member.categories.map((category) => (
 											<span
 												key={category}
-												className='inline-block px-2 py-1 text-xs font-medium bg-gray-100 text-gray-800 rounded-full'>
+												className='inline-block px-1 py-1 text-xs font-medium bg-gray-100 text-gray-800 rounded-full'>
 												{category}
 											</span>
 										))}

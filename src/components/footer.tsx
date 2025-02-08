@@ -1,8 +1,8 @@
-import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 const quickLinks = ["Home", "Muthmir", "Prototype", "Team"];
 const socialLinks = [
-	{ icon: Github, link: "#github", label: "GitHub" },
+	// { icon: Github, link: "#github", label: "GitHub" },
 	{ icon: Linkedin, link: "#linkedin", label: "LinkedIn" },
 ];
 
@@ -46,22 +46,22 @@ export function Footer() {
 							<li className='flex items-center'>
 								<Mail className='h-4 w-4 mr-2' />
 								<a
-									href='mailto:contact@muthmir.com'
+									href='mailto:muthmir.team@gmail.com'
 									className='hover:text-green-600 transition-colors duration-300'>
-									contact@muthmir.com
+									muthmir.team@gmail.com
 								</a>
 							</li>
 							<li className='flex items-center'>
 								<Phone className='h-4 w-4 mr-2' />
 								<a
-									href='tel:+1234567890'
+									href='tel:+20 106 336 4223'
 									className='hover:text-green-600 transition-colors duration-300'>
-									+1 234 567 890
+									+20 106 336 4223
 								</a>
 							</li>
 							<li className='flex items-start'>
 								<MapPin className='h-4 w-4 mr-2 mt-1' />
-								<span>Your Address Here, City, Country</span>
+								<span>Alexandria, Egypt</span>
 							</li>
 						</ul>
 					</div>

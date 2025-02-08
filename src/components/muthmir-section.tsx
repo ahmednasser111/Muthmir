@@ -45,9 +45,9 @@ const objectives: Objective[] = [
 		),
 	},
 	{
-		title: "Disease Control",
+		title: "Disease Detection",
 		description:
-			"Implement measures to monitor and control diseases effectively",
+			"Implement measures to monitor and detect diseases effectively",
 		icon: (
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
