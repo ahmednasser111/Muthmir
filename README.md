@@ -1,4 +1,4 @@
-# Muthmir - Smart Agriculture IoT Solution
+# Muthmir - Smart Agriculture
 
 ![Muthmir Logo](public/logo.png)
 
