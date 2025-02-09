@@ -1,26 +1,100 @@
-# Muthmir - Smart Agriculture
+# Muthmir - Smart Greenhouse Management System
 
-![Muthmir Logo](public/logo.png)
-
-## Overview
-
-Muthmir is an advanced Internet of Things (IoT) solution designed for smart agriculture. It leverages cutting-edge technology to provide real-time monitoring and automated control systems, optimizing crop management and improving agricultural productivity.
+Muthmir is a comprehensive smart greenhouse management system that integrates IoT, AI, and mobile technology to revolutionize farming practices. This project aims to optimize agricultural operations through real-time monitoring, automated control systems, and data-driven insights.
 
 ## Features
 
-- **Environmental Monitoring**: Advanced sensors measure temperature, humidity, soil moisture, and light intensity in real-time.
-- **Wireless Communication**: ESP32 microcontrollers enable seamless Wi-Fi and Bluetooth connectivity for reliable data transmission.
-- **Cloud Integration**: Firebase backend ensures secure, real-time data storage and synchronization across all devices.
-- **Powerful Processing**: Microcontrollers handle complex calculations and automated decision-making processes.
-- **Mobile App**: Built with Flutter for cross-platform compatibility and user-friendly interface.
+### 🌱 Smart Greenhouse Management
 
-## Technology Stack
+- Real-time environmental monitoring
+- Automated control systems
+- Cost-effective greenhouse operations
+- User-friendly interface
 
-- **Web Frontend**: Next.js with React
+### 🔧 IoT Integration
 
-## Getting Started
+- Environmental sensors (temperature, humidity, soil moisture)
+- Wireless communication via ESP32
+- Cloud integration with Firebase
+- Real-time data processing
 
-### Prerequisites
+### 🤖 AI Capabilities
 
-- Node.js (v14 or later)
-- npm or yarn
+- Plant disease detection
+- Growth stage classification
+- Predictive analytics
+- AI-powered chatbot assistance
+
+### 📱 Mobile Application
+
+- Real-time monitoring
+- Smart controls
+- Plant health tracking
+- Community features
+
+### 📊 Data Analysis
+
+- Real-time analysis
+- Historical data tracking
+- Power BI integration
+- Performance insights
+
+## Tech Stack
+
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **Mobile**: Flutter
+- **Backend**: Firebase
+- **IoT**: ESP32
+- **AI/ML**: Deep Learning models
+- **Analytics**: Power BI
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/muthmir.git
+cd muthmir
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run development server:
+
+```bash
+npm run dev
+```
+
+## 🏆 Achievements
+
+- 3rd Place in IEEE VICTORIS 3.0 Competition at Mansoura University (2024)
+
+## Team
+
+Our team consists of passionate individuals specializing in:
+
+- AI/Machine Learning
+- Mobile Development
+- IoT Engineering
+- Data Analysis
+- Cloud Architecture
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to check issues page if you want to contribute.
+
+## Contact
+
+Email: muthmir.team@gmail.com
+
+Location: Alexandria, Egypt
+
+Website: [Muthmir Homepage](https://muthmir.vercel.app)
