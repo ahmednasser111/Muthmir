@@ -77,7 +77,7 @@ const teamMembers: TeamMember[] = [
 	{
 		name: "Ali Mahmoud",
 		role: "AI Engineer",
-		image: "/placeholder.jpg",
+		image: "/pictures/ali.jpg",
 		categories: ["AI", "IoT", "Data Analysis"],
 		socialLinks: {
 			linkedin: "https://www.linkedin.com/in/ali-mahmoud-07b7ba24b",
@@ -88,7 +88,7 @@ const teamMembers: TeamMember[] = [
 		name: "Nour-Eldeen Anwar",
 		role: "AI Engineer",
 		image: "/pictures/nour.jpg",
-		categories: ["AI"],
+		categories: ["AI", "Data Analysis"],
 		socialLinks: {
 			linkedin: "https://www.linkedin.com/in/nour-eldeen-anwar-125743233",
 			github: "https://github.com/Nouranwar",
