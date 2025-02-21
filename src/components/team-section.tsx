@@ -37,7 +37,7 @@ const teamMembers: TeamMember[] = [
 	{
 		name: "Hazem Mohamed",
 		role: "Software Engineer",
-		image: "/placeholder.jpg",
+		image: "/pictures/hazem.jpg",
 		categories: ["Mobile", "Backend", "IoT", "Cloud"],
 		socialLinks: {
 			linkedin: "https://www.linkedin.com/in/hazem-mohamed-b296a6267/",
@@ -107,7 +107,7 @@ const teamMembers: TeamMember[] = [
 	{
 		name: "Ahmed Salah",
 		role: "Software Engineer",
-		image: "placeholder.jpg",
+		image: "/pictures/salah.jpg",
 		categories: ["Mobile", "IoT", "Cloud"],
 		socialLinks: {
 			linkedin: "https://www.linkedin.com/in/ahmed-salah-a6541b285",
