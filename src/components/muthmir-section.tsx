@@ -27,7 +27,7 @@ const objectives: Objective[] = [
 	{
 		title: "User-Friendly Design",
 		description:
-			"Design a greenhouse system that is simple to manage, even for non-professionals",
+			"Design a smart agriculture system that is simple to manage, even for non-professionals",
 		icon: (
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
