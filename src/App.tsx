@@ -8,7 +8,8 @@ import IoTSection from "./components/iot-section";
 import AISection from "./components/ai-section";
 import AnalysisSection from "./components/analysis-section";
 import MobileSection from "./components/mobile-section";
-import AchievementSection from "./components/achivement-section";
+import AchievementSection from "./components/achievement-section";
+import PortSaidAchievementSection from "./components/port-said-achievement";
 
 export default function App() {
 	return (
@@ -23,6 +24,7 @@ export default function App() {
 				<AnalysisSection />
 				<MobileSection />
 				<AchievementSection />
+				<PortSaidAchievementSection />
 				<TeamSection />
 			</main>
 			<Footer />

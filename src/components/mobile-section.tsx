@@ -54,7 +54,7 @@ const screens: AppScreen[] = [
 	{
 		title: "Plant Health AI",
 		description: "AI-powered disease detection and plant health monitoring",
-		image: "/mobile/health.png",
+		image: "/mobile/health.jpg",
 		icon: (
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
