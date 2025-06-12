@@ -74,10 +74,10 @@ const MuthmirSection: React.FC = () => {
 			<div className='container mx-auto px-4'>
 				<div className='flex flex-col items-center mb-16'>
 					<h2 className='text-4xl font-bold text-gray-900 text-center mb-6'>
-						Smart Greenhouse Management
+						Smart Agriculture System
 					</h2>
 					<p className='text-xl text-gray-600 text-center max-w-3xl'>
-						Muthmir is a smart greenhouse management system that integrates IoT,
+						Muthmir is a smart agriculture management system that integrates IoT,
 						AI, and real-time data analytics to optimize agricultural
 						operations. The system allows farmers to monitor and control key
 						environmental factors such as temperature, humidity, soil moisture,
